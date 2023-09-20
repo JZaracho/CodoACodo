@@ -1,0 +1,53 @@
+body{
+    background-color: #f2ecf0;
+}
+
+/*----------------------------------------------------
+Estilos para el contenedor grid
+----------------------------------------------------*/
+
+/*----------------------------------------------------
+Estilos para el encabezado
+----------------------------------------------------*/
+
+.encabezado img{
+    width: 10%;
+}
+/*----------------------------------------------------
+Estilos para barra de menu
+----------------------------------------------------*/
+.menu {
+    display:flex;   
+    justify-content: space-evenly;
+    background-color: #a3aee3;
+    border-radius: 10px;
+}
+
+.item-menu{
+    font-size: 120%;  
+    margin: 40px;
+    text-decoration: none;
+    color:  #173353;
+
+
+}
+
+.menu :hover {
+    background-color: #2364af;
+    color:#f2ecf0;;
+    border-radius: 10px;
+}
+
+/*----------------------------------------------------
+Estilos para cuestionario
+----------------------------------------------------*/
+.cuestionario{
+    margin: 30px;
+}
+
+.pie{
+    color: #2364af;
+    margin: 30px;
+}
+
+
