@@ -1,3 +1,5 @@
+.quienessomos.html
+
 body {
     background-color:beige;
     margin: 1px;
@@ -18,7 +20,11 @@ header {
 .menues-bnt {
     margin: 2px;
     margin-left: 15px;
+    cursor: pointer; 
 
+}
+.menues-bnt:hover{
+    opacity: 0.5;
 }
 a{
     margin-left: 15px;
@@ -33,4 +39,5 @@ button.menues-bnt{
     background-color:rgb(119, 164, 226);
     border-radius: 20%;
     padding: 5px;
+    
 }
