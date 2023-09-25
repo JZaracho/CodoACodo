@@ -1,0 +1,36 @@
+body {
+    background-color:beige;
+    margin: 1px;
+    padding: 0px;
+}
+header {
+    text-align: center;
+
+}
+.container {
+    background-color: #66c3fe;
+    list-style: none;
+    display: flex;
+    padding: auto;
+    align-items: center;
+    margin-top: 1px;
+}
+.menues-bnt {
+    margin: 2px;
+    margin-left: 15px;
+
+}
+a{
+    margin-left: 15px;
+}
+
+span{
+   
+    
+}
+
+button.menues-bnt{
+    background-color:rgb(119, 164, 226);
+    border-radius: 20%;
+    padding: 5px;
+}
