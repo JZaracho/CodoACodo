@@ -1,0 +1,123 @@
+/*.imagen-logo {
+    width: 14%;
+    float: left;
+}
+*/
+.imagen-logo {
+  width: 20%; /* Ajusta el ancho según tus necesidades */
+  margin-right: 20px; /* Agrega margen derecho para separarlo */
+  margin-left: 20px; /* Agrega margen izquierdo para separarlo */
+  max-width: 150px; /* Establece un ancho máximo */
+  height: auto; /* Mantiene la proporción de aspecto */
+  float: left;
+}
+
+.menu {
+ width: 900px;
+ margin: 0 auto;
+ background: #d3eaf2;
+
+}
+
+  ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+  }
+  
+  li {
+    margin-right: 20px; 
+  }
+  
+  a {
+    text-decoration: none; 
+    color: white; 
+    font-weight: bold; 
+  }
+  
+  a:hover {
+    text-decoration: underline; 
+  }
+  
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-box {
+    width: 483px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-button {
+    background-color: #4894b5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin-left: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-button {
+    background-color: #46a9d4; 
+    color: white; 
+    padding: 18px 20px; 
+    border: none;
+    border-radius: 4px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    float: right;
+}
+
+.login-button:hover {
+    background-color: #0056b3; 
+}
+
+
+.card-container {
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+  }
+/*  
+  .card {
+    width: calc(33.33% - 10px); 
+    border: #ccc;
+    padding: 10px;
+    box-sizing: border-box; 
+    margin-bottom: 10px; 
+  }
+*/
+.card {
+  width: calc(33.33% - 10px); /* 3 columnas en pantalla grande */
+  margin-right: 10px; /* Espacio entre las tarjetas */
+  box-sizing: border-box;
+}
+@media screen and (max-width: 768px) {
+  .card {
+      width: calc(50% - 10px); /* 2 columnas en pantalla mediana */
+  }
+}
+@media screen and (max-width: 480px) {
+  .card {
+      width: 100%; /* 1 columna en pantalla pequeña */
+  }
+}
+
+  .card img {
+    width: 33%;
+    max-width: 100%;
+    height: auto;
+  }  
