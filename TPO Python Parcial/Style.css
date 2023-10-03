@@ -4,11 +4,11 @@
 }
 */
 .imagen-logo {
-  width: 20%; /* Ajusta el ancho según tus necesidades */
-  margin-right: 20px; /* Agrega margen derecho para separarlo */
-  margin-left: 20px; /* Agrega margen izquierdo para separarlo */
-  max-width: 150px; /* Establece un ancho máximo */
-  height: auto; /* Mantiene la proporción de aspecto */
+  width: 20%; 
+  margin-right: 20px; 
+  margin-left: 20px; 
+  max-width: 150px; 
+  height: auto; 
   float: left;
 }
 
@@ -101,18 +101,18 @@
   }
 */
 .card {
-  width: calc(33.33% - 10px); /* 3 columnas en pantalla grande */
-  margin-right: 10px; /* Espacio entre las tarjetas */
+  width: calc(33.33% - 10px); 
+  margin-right: 10px; 
   box-sizing: border-box;
 }
 @media screen and (max-width: 768px) {
   .card {
-      width: calc(50% - 10px); /* 2 columnas en pantalla mediana */
+      width: calc(50% - 10px); 
   }
 }
 @media screen and (max-width: 480px) {
   .card {
-      width: 100%; /* 1 columna en pantalla pequeña */
+      width: 100%; 
   }
 }
 
