@@ -11,4 +11,10 @@ Estilos para cuestionario
     margin: 30px;
 }
 
+.grupo-alineado{
+    display:flex;
+
+    justify-content: space-around;
+    align-items: center;
+}
 

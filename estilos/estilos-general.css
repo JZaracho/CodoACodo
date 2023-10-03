@@ -43,6 +43,8 @@ Estilos para el encabezado
 
     grid-template-columns: auto 85% auto;
     grid-template-areas: "icono menu login";
+
+    box-shadow: 0 2px 0px #17335338;
   /*   
     grid-column-start: 1;
     grid-column-end: 4; */
@@ -62,11 +64,7 @@ Estilos para el encabezado
 .menu {
     display:flex;   
     justify-content: space-around;
-    align-items: center;
-    background-color: #a3aee3;
-    border-radius: 10px;
-    margin: 15px 0px;
-   
+    align-items: center;   
 }
 
 .item-menu{
@@ -80,14 +78,13 @@ Estilos para el encabezado
 }
 
 .menu :hover {
-    background-color: #2364af;
-    color:#f2ecf0;;
     border-radius: 10px;
     transform:scale(1.2);
 }
 
 .pag-actual{
-    color: #f2ecf0;
+    color: #075C7B;
+    font-weight: bold;
     border-radius: 10px;
     font-size: 130%;
   }
