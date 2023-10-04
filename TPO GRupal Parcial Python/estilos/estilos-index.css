@@ -1,0 +1,37 @@
+.contenedor-libros{
+    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 50px;
+    padding: 10px;
+}
+
+.libro{
+    padding: 10px;
+}
+
+.libro img{
+    border-radius: 5px;
+}
+
+.libro figcaption{
+    color: #173353;
+}
+
+/*estilos para el buscador*/
+
+input[type=search] {
+    width: 300px;
+    height: 40px;
+    margin: 20px;
+    border: 2px solid #cecdea;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 80%;
+    background-color: #F2ECF0;
+  }
+  
+
+.libro :hover{
+    transform: scale(1.01);
+}

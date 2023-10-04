@@ -1,0 +1,134 @@
+body{
+    background-color: #f2ecf0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/*------------------------------------------------
+Estilos para el contenedor grid
+----------------------------------------------------*/
+/* nombro los elementos */
+
+/* .menu           { grid-area: menu;}
+.cuestionario   { grid-area: cuestionario;}
+.pie            { grid-area: pie;}
+.icono          { grid-area: icono;}
+.login          { grid-area: login;}
+.encabezado { 
+    grid-area: encabezado;
+
+    display: grid;
+
+    grid-template-columns: 1fr 90%;
+    grid-template-areas: "icono menu";
+} */
+
+/* contenedor grid*/
+
+.contenedor-grid {
+    display: grid;
+
+    text-align: center;
+    
+    grid-template-columns: auto ;
+    gap: 10px;
+  
+  }
+
+
+/*----------------------------------------------------
+Estilos para el encabezado
+----------------------------------------------------*/
+.encabezado{
+    display: grid;
+
+    grid-template-columns: auto 85% auto;
+    grid-template-areas: "icono menu login";
+
+    box-shadow: 0 2px 0px #17335338;
+  /*   
+    grid-column-start: 1;
+    grid-column-end: 4; */
+}
+
+    /*----------------------------------------------------
+    imagen 
+    ----------------------------------------------------*/
+
+.encabezado img{
+    justify-content: center;
+    width: 60px;   
+}
+    /*----------------------------------------------------
+    barra de menu
+    ----------------------------------------------------*/
+.menu {
+    display:flex;   
+    justify-content: space-around;
+    align-items: center;   
+}
+
+.item-menu{
+    font-size: 110%;  
+    margin: 40px;
+    text-decoration: none;
+    color:  #173353;
+    text-align: center;
+    margin: 1px;
+    
+}
+
+.menu :hover {
+    border-radius: 10px;
+    transform:scale(1.2);
+}
+
+.pag-actual{
+    color: #075C7B;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 130%;
+}
+
+/* .login{
+    background-color: #cecdea;
+    text-decoration: none;
+    margin: 6px;
+}*/
+
+.login-button {
+    background-color: #46a9d4; 
+    color: white; 
+    padding: 18px 20px; 
+    border: none;
+    border-radius: 4px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    float: right;
+}
+
+.login-button:hover {
+    background-color: #0056b3; 
+}
+
+button {
+    background-color: #4894b5; 
+    color: white; 
+    padding: 5px 10px; 
+    border: none; 
+    border-radius: 4px; 
+    font-size: 14px; 
+    cursor: pointer; 
+}
+
+
+button:hover {
+    background-color: #0056b3; 
+}
+
+.quienes {
+    padding: 10%;
+    border: none;
+    text-align: justify;
+
+
+}
