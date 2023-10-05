@@ -36,6 +36,10 @@ Estilos para el contenedor grid
     width: 100px;   
 }
 
+.icono{
+    grid-area: icono;
+}
+
     /*----------------------------------------------------
     barra de menu
     ----------------------------------------------------*/
@@ -45,6 +49,7 @@ Estilos para el contenedor grid
     align-items: center;   
     position: sticky;
     top: 5px;
+    grid-area: menu;
 }
 
 .item-menu{
@@ -80,11 +85,8 @@ Estilos para el contenedor grid
     float: right;
     text-align: center;
     align-items: center;
+    grid-area: login;
  
-}
-
-.login-button:hover {
-    background-color: #0056b3; 
 }
 
 button {
@@ -96,7 +98,6 @@ button {
     font-size: 14px; 
     cursor: pointer; 
 }
-
 
 button:hover {
     background-color: #0056b3; 
@@ -113,11 +114,13 @@ button:hover {
     color: #173353;
     margin: 30px;
     text-align: left;
+    padding-top: 3%;
 }
 
 .hamburguesa {
     display: none; /* Oculta el botón en pantallas grandes */
     cursor: pointer;
+    grid-area: hamburguesa;
 }
 
 .barra {
@@ -127,33 +130,40 @@ button:hover {
     margin: 4px 0;
 }
 
-/* Estilos para la lista de menú */
-.menu {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+
+@media (max-width: 1200px){
+    .encabezado{
+        display: grid;
+    
+        grid-template: auto auto / auto auto;
+        grid-template-areas:"icono  login"
+                            "menu menu ";
+        justify-content: space-around;
+    
+        box-shadow: 0 2px 0px #17335338;
+    }
+    
 }
 
-.menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.menu li {
-    margin-right: 20px;
-}
-
-/* Estilos para ocultar la lista del menú en pantallas pequeñas 
-@media screen and (max-width: 768px) {
-    .menu ul {
+/* Estilos para ocultar la lista del menú en pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu {
         display: none;
     }
 
-    /* Muestra el botón de hamburguesa en lugar del menú 
+    /* Muestra el botón de hamburguesa en lugar del menú */
     .hamburguesa {
         display: block;
-        margin-right: 20px;
+        margin: 50%;
     }
-}*/
+
+    .encabezado{
+        display: grid;
+    
+        grid-template: auto auto auto ;
+        grid-template-areas:"hamburguesa icono  login";
+        justify-content: space-around;
+    
+        box-shadow: 0 2px 0px #17335338;
+    }
+}
