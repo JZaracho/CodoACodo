@@ -12,28 +12,32 @@
 <body>
     <div class="contenedor-grid">
 
-       <!--  <header>
-            <h1>E-Book Heaven</h1>
-        </header> -->
-
         <div class="encabezado">
 
             <div class="icono">
                 <div>
-                    <img src="./img/img-prueba.png" alt="">
+                    <img src="/TPO GRupal Parcial Python/img/logo.png" alt="">
                 </div>
             </div>
 
-            <nav class="menu">
-                <div><a href="index.html" class="item-menu  pag-actual">Home</a></div>
-                <div><a href="" class="item-menu">Catalogo</a></div>
-                <div><a href="contacto.html" class="item-menu">Contacto</a></div>
-                <div><a href="quienessomos.html" class="item-menu">Quienes somos</a></div>
+            <div class="hamburguesa">
+                <div class="barra"></div>
+                <div class="barra"></div>
+                <div class="barra"></div>
+            </div>
+            
+                        <nav class="menu">
+                <ul>
+                    <li><a href="index.html" class="item-menu pag-actual">Home</a></li>
+                    <li><a href="catalogo.html" class="item-menu">Catalogo</a></li>
+                    <li><a href="contacto.html" class="item-menu">Contacto</a></li>
+                    <li><a href="quienessomos.html" class="item-menu">Quienes somos</a></li>
+                </ul>
             </nav>
 
             <div class="login">
                 <a href="">
-                    <p>Login</p>
+                    <button class="login-button">Iniciar Sesión</button>
                 </a>
             </div>
         </div>
@@ -113,6 +117,16 @@
                 <figcaption> Una educación</figcaption>
             </div>
         </main>
-</body>
 
+        <footer class="pie">
+            © 2023 Todos los derechos reservados.
+        </footer>
+</body>
+<!-- Agrega el botón de hamburguesa 
+<script>
+    document.querySelector('.hamburguesa').addEventListener('click', function () {
+        const menu = document.querySelector('.menu ul');
+        menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    });
+</script> -->
 </html>

@@ -6,15 +6,9 @@ Estilos para cuestionario
     margin: 20px 20px; 
 }
 
-.pie{
-    color: #2364af;
-    margin: 30px;
-}
-
 .grupo-alineado{
     display:flex;
 
     justify-content: space-around;
     align-items: center;
 }
-

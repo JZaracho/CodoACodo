@@ -6,23 +6,6 @@ body{
 /*------------------------------------------------
 Estilos para el contenedor grid
 ----------------------------------------------------*/
-/* nombro los elementos */
-
-/* .menu           { grid-area: menu;}
-.cuestionario   { grid-area: cuestionario;}
-.pie            { grid-area: pie;}
-.icono          { grid-area: icono;}
-.login          { grid-area: login;}
-.encabezado { 
-    grid-area: encabezado;
-
-    display: grid;
-
-    grid-template-columns: 1fr 90%;
-    grid-template-areas: "icono menu";
-} */
-
-/* contenedor grid*/
 
 .contenedor-grid {
     display: grid;
@@ -34,30 +17,25 @@ Estilos para el contenedor grid
   
   }
 
-
-/*----------------------------------------------------
-Estilos para el encabezado
-----------------------------------------------------*/
 .encabezado{
     display: grid;
 
     grid-template-columns: auto 85% auto;
     grid-template-areas: "icono menu login";
+    justify-content: space-around;
 
     box-shadow: 0 2px 0px #17335338;
-  /*   
-    grid-column-start: 1;
-    grid-column-end: 4; */
 }
 
-    /*----------------------------------------------------
+ /*----------------------------------------------------
     imagen 
-    ----------------------------------------------------*/
+ ----------------------------------------------------*/
 
 .encabezado img{
     justify-content: center;
-    width: 60px;   
+    width: 100px;   
 }
+
     /*----------------------------------------------------
     barra de menu
     ----------------------------------------------------*/
@@ -65,6 +43,8 @@ Estilos para el encabezado
     display:flex;   
     justify-content: space-around;
     align-items: center;   
+    position: sticky;
+    top: 5px;
 }
 
 .item-menu{
@@ -87,10 +67,93 @@ Estilos para el encabezado
     font-weight: bold;
     border-radius: 10px;
     font-size: 130%;
-  }
-
-.login{
-    background-color: #cecdea;
-    text-decoration: none;
-    margin: 6px;
 }
+
+.login-button {
+    background-color: #46a9d4; 
+    color: white; 
+    padding: 18px 20px; 
+    border: none;
+    border-radius: 4px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    float: right;
+    text-align: center;
+    align-items: center;
+ 
+}
+
+.login-button:hover {
+    background-color: #0056b3; 
+}
+
+button {
+    background-color: #4894b5; 
+    color: white; 
+    padding: 5px 10px; 
+    border: none; 
+    border-radius: 4px; 
+    font-size: 14px; 
+    cursor: pointer; 
+}
+
+
+button:hover {
+    background-color: #0056b3; 
+}
+
+.quienes {
+    padding: 10%;
+    border: none;
+    text-align: justify;
+
+}
+
+.pie{
+    color: #173353;
+    margin: 30px;
+    text-align: left;
+}
+
+.hamburguesa {
+    display: none; /* Oculta el botón en pantallas grandes */
+    cursor: pointer;
+}
+
+.barra {
+    width: 30px;
+    height: 3px;
+    background-color: #173353;
+    margin: 4px 0;
+}
+
+/* Estilos para la lista de menú */
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+/* Estilos para ocultar la lista del menú en pantallas pequeñas 
+@media screen and (max-width: 768px) {
+    .menu ul {
+        display: none;
+    }
+
+    /* Muestra el botón de hamburguesa en lugar del menú 
+    .hamburguesa {
+        display: block;
+        margin-right: 20px;
+    }
+}*/
