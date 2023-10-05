@@ -1,40 +1,81 @@
 .contenedor-libros{
     
     display: grid;
-    grid-template-columns: repeat(6, 1fr); 
+    grid-template-columns: repeat(7, 1fr); 
     row-gap: 5%;
     padding: 1%;
+
 }
 
 .libro{
-    padding: 2%;
+    padding: 10px;
+    margin: 1px;
+    height: 35vh;
+    
 }
 
 .libro img{
-    border-radius: 5px;
-    
+    border-radius: 10px;  
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+
 }
 
 .libro figcaption{
     color: #173353;
 }
 
+.contenedor-genero button{
+    margin: 10px;
+}
+
 /*estilos para el buscador*/
 
 input[type=search] {
     width: 70%;
-    height: 10%;
-    border: 2px solid #cecdea;
+    height: 10px;
+    border: 2px solid #17335338;
     border-radius: 20px;
     margin: 2%;
     padding: 1%;
     font-size: 80%;
     background-color: #F2ECF0;
-
-  }
+}
   
 
 .libro :hover{
     transform: scale(1.01);
 }
 
+
+@media (max-width: 1200px) {
+    .contenedor-libros{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        row-gap: 5%;
+        padding: 1%;
+    }
+
+    input[type=search] {
+        width: 70%;
+      
+        border: 2px solid #17335338;
+        border-radius: 20px;
+        margin: 2%;
+        padding: 1%;
+        font-size: 80%;
+        background-color: #F2ECF0;
+    }
+      
+
+}
+
+@media (max-width: 768px) {
+    .contenedor-libros{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        row-gap: 5%;
+        padding: 1%;
+    }
+}
