@@ -27,9 +27,9 @@ Estilos para el contenedor grid
     box-shadow: 0 2px 0px #17335338;
 }
 
-    /*----------------------------------------------------
+ /*----------------------------------------------------
     imagen 
-    ----------------------------------------------------*/
+ ----------------------------------------------------*/
 
 .encabezado img{
     justify-content: center;
@@ -44,7 +44,7 @@ Estilos para el contenedor grid
     justify-content: space-around;
     align-items: center;   
     position: sticky;
-    top: 0;
+    top: 5px;
 }
 
 .item-menu{

@@ -1,17 +1,18 @@
 .contenedor-libros{
     
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    row-gap: 50px;
-    padding: 10px;
+    grid-template-columns: repeat(6, 1fr); 
+    row-gap: 5%;
+    padding: 1%;
 }
 
 .libro{
-    padding: 10px;
+    padding: 2%;
 }
 
 .libro img{
     border-radius: 5px;
+    
 }
 
 .libro figcaption{
@@ -21,14 +22,15 @@
 /*estilos para el buscador*/
 
 input[type=search] {
-    width: 300px;
-    height: 40px;
-    margin: 20px;
+    width: 70%;
+    height: 10%;
     border: 2px solid #cecdea;
     border-radius: 20px;
-    padding: 10px;
+    margin: 2%;
+    padding: 1%;
     font-size: 80%;
     background-color: #F2ECF0;
+
   }
   
 
