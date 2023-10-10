@@ -4,7 +4,7 @@
     grid-template-columns: repeat(7, 1fr); 
     row-gap: 5%;
     padding: 1%;
-
+    overflow: auto;   
 }
 
 .libro{
@@ -41,6 +41,7 @@ input[type=search] {
     padding: 1%;
     font-size: 80%;
     background-color: #F2ECF0;
+    grid-area: buscador;
 }
   
 

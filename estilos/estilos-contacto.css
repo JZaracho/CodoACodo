@@ -1,8 +1,9 @@
 
 /*----------------------------------------------------
-Estilos para cuestionario
+Estilos para formularios
 ----------------------------------------------------*/
-.item-cuest{
-    margin: 10% 10%; 
-}
 
+.claseLogin{
+    width: 50%;
+
+}

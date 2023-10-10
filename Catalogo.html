@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eBookHeaven</title>
     <link rel="stylesheet" href="estilos/estilos-general.css">
-    <link rel="stylesheet" href="estilos/estilos-index.css">
+    <link rel="stylesheet" href="estilos/estilos-inicio-catalogo.css">
 
 
 </head>
 
 <body>
     <script src="./java/menu.js"></script>
+    <script src="./java/general.js"></script>
+
     <div class="contenedor-grid">
 
         <header class="encabezado">
@@ -23,6 +25,21 @@
                 </div>
             </div>
 
+            <nav class="menu">
+
+                <div><a href="inicio.html" class="item-menu">Home</a></div>
+                <div><a href="catalogo.html" class="item-menu pag-actual">Catalogo</a></div>
+                <div><a href="contacto.html" class="item-menu">Contacto</a></div>
+                <div><a href="quienessomos.html" class="item-menu">Quienes somos</a></div>
+
+            </nav>
+
+            <div class="botonLogin">
+                <a href="login.html">
+                    <button class="login-button">Iniciar Sesión</button>
+                </a>
+            </div>
+
             <div id="botonHamburguesa">
                 <div class="barra"></div>
                 <div class="barra"></div>
@@ -30,26 +47,11 @@
             </div>
 
             <div class="menuHamburguesa" id="contenidoMenu">
-                <div><a href="index.html" class="item-menu">Home</a></div>
+                <div><a href="inicio.html" class="item-menu">Home</a></div>
                 <div><a href="catalogo.html" class="item-menu pag-actual">Catalogo</a></div>
                 <div><a href="contacto.html" class="item-menu">Contacto</a></div>
                 <div><a href="quienessomos.html" class="item-menu">Quienes somos</a></div>
 
-            </div>
-
-            <nav class="menu">
-
-                <div><a href="index.html" class="item-menu">Home</a></div>
-                <div><a href="catalogo.html" class="item-menu pag-actual">Catalogo</a></div>
-                <div><a href="contacto.html" class="item-menu">Contacto</a></div>
-                <div><a href="quienessomos.html" class="item-menu">Quienes somos</a></div>
-
-            </nav>
-
-            <div class="login">
-                <a href="">
-                    <button class="login-button">Iniciar Sesión</button>
-                </a>
             </div>
 
         </header>
