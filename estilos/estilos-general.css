@@ -39,10 +39,9 @@ Estilos para el contenedor grid
 .icono{
     grid-area: icono;
 }
-
-    /*----------------------------------------------------
+/*----------------------------------------------------
     barra de menu
-    ----------------------------------------------------*/
+----------------------------------------------------*/
 .menu {
     display:flex;   
     justify-content: space-around;
@@ -73,6 +72,8 @@ Estilos para el contenedor grid
     font-size: 130%;
 }
 
+/*boton login*/
+
 .login-button {
     background-color: #46a9d4; 
     color: white; 
@@ -102,13 +103,8 @@ button:hover {
     background-color: #0056b3; 
 }
 
-.quienes {
-    padding: 10%;
-    border: none;
-    text-align: justify;
 
-}
-
+/*footer*/
 .pie{
     color: #173353;
     margin: 30px;
@@ -116,10 +112,19 @@ button:hover {
     padding-top: 3%;
 }
 
-.hamburguesa {
-    display: none; /* Oculta el botón en pantallas grandes */
-    cursor: pointer;
-    grid-area: hamburguesa;
+
+/* clases necesarias para el menu en pantallas pequeñas*/
+/* 
+#botonHamburguesa {
+    display: none; 
+}  
+Si descomento esta linea desaparece el boton en las pantallas grandes, pero tambien en la chica.
+*/
+
+
+.menuHamburguesa{
+    display: none;
+    grid-area: hamburguesa; 
 }
 
 .barra {
@@ -127,7 +132,9 @@ button:hover {
     height: 3px;
     background-color: #173353;
     margin: 4px 0;
-}
+} 
+
+
 
 /* Estilos del menu para pantallas medianas */
 @media (max-width: 1200px){
@@ -150,9 +157,11 @@ button:hover {
     }
 
     /* Muestra el botón de hamburguesa en lugar del menú */
-    .hamburguesa {
-        display: block;
+    #botonHamburguesa {
+        display: center;
         margin: 50%;
+        position: relative;
+        cursor: pointer;
     }
 
     .encabezado{
@@ -164,4 +173,6 @@ button:hover {
     
         box-shadow: 0 2px 0px #17335338;
     }
+
+    
 }
