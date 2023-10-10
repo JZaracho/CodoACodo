@@ -56,7 +56,6 @@ function validacionEmail(email) {
     return re.test(email);
 } 
 
-alert("Formulario enviado, muchas gracias.")
 formulario.addEventListener("submit", validar);
 
 
