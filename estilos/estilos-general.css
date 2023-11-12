@@ -1,6 +1,6 @@
-body{
+body {
     background-color: #f2ecf0;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /*------------------------------------------------
@@ -11,14 +11,14 @@ Estilos para el contenedor grid
     display: grid;
 
     text-align: center;
-    
-    grid-template-columns: auto ;
+
+    grid-template-columns: auto;
     gap: 10px;
     overflow: auto;
-  
-  }
 
-.encabezado{
+}
+
+.encabezado {
     display: grid;
 
     grid-template-columns: auto 85% auto;
@@ -28,51 +28,52 @@ Estilos para el contenedor grid
     box-shadow: 0 2px 0px #17335338;
 }
 
- /*----------------------------------------------------
+/*----------------------------------------------------
     imagen 
  ----------------------------------------------------*/
 
-.encabezado img{
+.encabezado img {
     justify-content: center;
-    width: 100px;   
+    width: 100px;
 }
-/*---
+
+/* ---- 
 .icono{
     grid-area: icono;
 }
------*/
-.icono img {
-    width:80%
-}
+------*/
 
+.icono img {
+    width: 80%
+}
 
 /*----------------------------------------------------
     barra de menu
 ----------------------------------------------------*/
 .menu {
-    display:flex;   
+    display: flex;
     justify-content: space-around;
-    align-items: center;    
+    align-items: center;
     margin: 2%;
     grid-area: menu;
 }
 
-.item-menu{
-    font-size: 110%;  
+.item-menu {
+    font-size: 110%;
     margin: 40px;
     text-decoration: none;
-    color:  #173353;
+    color: #173353;
     text-align: center;
     margin: 1px;
-    
+
 }
 
 .menu :hover {
     border-radius: 10px;
-    transform:scale(1.2);
+    transform: scale(1.2);
 }
 
-.pag-actual{
+.pag-actual {
     color: #075C7B;
     font-weight: bold;
     border-radius: 10px;
@@ -82,40 +83,49 @@ Estilos para el contenedor grid
 /*boton login*/
 
 .login-button {
-    background-color: #46a9d4; 
-    color: white; 
-    padding: 18px 20px; 
+    background-color: #46a9d4;
+    color: white;
+    padding: 18px 20px;
     border: none;
-    border-radius: 4px; 
-    font-size: 16px; 
-    cursor: pointer; 
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
     float: right;
     text-align: center;
     align-items: center;
     grid-area: login;
- 
+
 }
 
 button {
-    background-color: #4894b5; 
-    color: white; 
-    padding: 5px 10px; 
-    border: none; 
-    border-radius: 4px; 
-    font-size: 14px; 
-    cursor: pointer; 
+    background-color: #4894b5;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3; 
+    background-color: #0056b3;
 }
 
+/*subtitulos*/
+h2 {
+    font-size: 110%;
+    margin: 40px;
+    text-decoration: none;
+    color: #0056b3;
+    text-align: left;
+    margin: 1px;
+}
 
 /*footer*/
-.pie{
+.pie {
     color: #173353;
     margin: 30px;
-    text-align: left;
+    text-align: center;
     padding-top: 20px;
 }
 
@@ -129,9 +139,9 @@ Si descomento esta linea desaparece el boton en las pantallas grandes, pero tamb
 */
 
 
-.menuHamburguesa{
+.menuHamburguesa {
     display: none;
-    grid-area: hamburguesa; 
+    grid-area: hamburguesa;
 }
 
 .barra {
@@ -139,22 +149,22 @@ Si descomento esta linea desaparece el boton en las pantallas grandes, pero tamb
     height: 3px;
     background-color: #173353;
     margin: 4px 0;
-} 
+}
 
 
 
 /* Estilos del menu para pantallas medianas */
-@media (max-width: 1200px){
-    .encabezado{
+@media (max-width: 1200px) {
+    .encabezado {
         display: grid;
-        grid-template: 50% 50% /auto auto  ;
-        grid-template-areas:"icono login"
-                            "menu menu ";
+        grid-template: 50% 50% /auto auto;
+        grid-template-areas: "icono login"
+            "menu menu ";
         justify-content: space-around;
-    
+
         box-shadow: 0 2px 0px #17335338;
     }
-    
+
 }
 
 /* Estilos del menu para pantallas pequeñas */
@@ -171,15 +181,15 @@ Si descomento esta linea desaparece el boton en las pantallas grandes, pero tamb
         cursor: pointer;
     }
 
-    .encabezado{
+    .encabezado {
         display: grid;
-    
-        grid-template: auto auto auto ;
-        grid-template-areas:"hamburguesa icono login";
+
+        grid-template: auto auto auto;
+        grid-template-areas: "hamburguesa icono login";
         justify-content: space-evenly;
-    
+
         box-shadow: 0 2px 0px #17335338;
     }
 
-    
+
 }
