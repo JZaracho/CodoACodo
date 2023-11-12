@@ -36,10 +36,16 @@ Estilos para el contenedor grid
     justify-content: center;
     width: 100px;   
 }
-
+/*---
 .icono{
     grid-area: icono;
 }
+-----*/
+.icono img {
+    width:80%
+}
+
+
 /*----------------------------------------------------
     barra de menu
 ----------------------------------------------------*/
